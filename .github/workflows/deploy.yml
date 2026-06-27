@@ -23,7 +23,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Build site
-        run: zensical build
+        run: zensical build --config-file zensical.toml
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
