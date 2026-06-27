@@ -521,8 +521,8 @@ toggle.name = "Switch to light mode"
 # a monospaced font used in code blocks.
 # ----------------------------------------------------------------------------
 [project.theme.font]
-text = "Roboto"
-code = "Source Code Pro"
+text = "Noto Serif"
+code = "Noto Sans"
 
 # ----------------------------------------------------------------------------
 # You can configure your own logo to be shown in the header using the "logo"
