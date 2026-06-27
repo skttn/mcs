@@ -1,0 +1,562 @@
+# ============================================================================
+#
+# The configuration produced by default is meant to highlight the features
+# that Zensical provides and to serve as a starting point for your own
+# projects.
+#
+# ============================================================================
+
+[project]
+
+# The site_name is shown in the page header and the browser window title
+#
+# Read more: https://zensical.org/docs/setup/basics/#site_name
+site_name = "Sổ tay Nhân sự & Vận hành Marie Curie"
+
+# The site_description is included in the HTML head and should contain a
+# meaningful description of the site content for use by search engines.
+#
+# Read more: https://zensical.org/docs/setup/basics/#site_description
+site_description = "A new project generated from the default template project."
+
+# The site_author attribute. This is used in the HTML head element.
+#
+# Read more: https://zensical.org/docs/setup/basics/#site_author
+site_author = "<your name here>"
+
+# The site_url is the canonical URL for your site. When building online
+# documentation you should set this.
+# Read more: https://zensical.org/docs/setup/basics/#site_url
+#site_url = "https://www.example.com/"
+
+# The copyright notice appears in the page footer and can contain an HTML
+# fragment.
+#
+# Read more: https://zensical.org/docs/setup/basics/#copyright
+copyright = """
+Copyright &copy; 2025 The authors
+"""
+
+# Zensical supports both implicit navigation and explicitly defined navigation.
+# If you decide not to define a navigation here then Zensical will simply
+# derive the navigation structure from the directory structure of your
+# "docs_dir". The definition below demonstrates how a navigation structure
+# can be defined using TOML syntax.
+#
+# Read more: https://zensical.org/docs/setup/navigation/
+nav = [
+    {"Giới thiệu" = [
+        "gioi-thieu/index.md",
+        {"Thông tin cơ bản" = [
+            "gioi-thieu/thong-tin-co-ban/ten-truong.md",
+            "gioi-thieu/thong-tin-co-ban/dia-chi.md",
+            "gioi-thieu/thong-tin-co-ban/qua-trinh-phat-trien.md",
+            "gioi-thieu/thong-tin-co-ban/website-hotline.md"
+        ]},
+        {"Triết lí hoạt động" = [
+            "gioi-thieu/triet-li-hoat-dong/su-menh.md",
+            "gioi-thieu/triet-li-hoat-dong/tam-nhin.md",
+            "gioi-thieu/triet-li-hoat-dong/gia-tri-cot-loi.md"
+        ]},
+        {"Cơ cấu tổ chức" = [
+            "gioi-thieu/co-cau-to-chuc/so-do-bo-may.md",
+            "gioi-thieu/co-cau-to-chuc/danh-sach-phong-ban.md",
+            "gioi-thieu/co-cau-to-chuc/phan-cap-quyen-han.md"
+        ]},
+        "gioi-thieu/lich-su-phat-trien.md"
+    ]},
+    {"Quy định" = [
+        {"Thời gian làm việc" = [
+            "quy-dinh/thoi-gian-lam-viec/gio-hanh-chinh.md",
+            "quy-dinh/thoi-gian-lam-viec/gio-day.md",
+            "quy-dinh/thoi-gian-lam-viec/buoi-toi-cuoi-tuan.md"
+        ]},
+        {"Nghỉ phép" = [
+            "quy-dinh/nghi-phep/nghi-nam.md",
+            "quy-dinh/nghi-phep/nghi-om.md",
+            "quy-dinh/nghi-phep/thai-san.md",
+            "quy-dinh/nghi-phep/nghi-dot-xuat.md",
+            "quy-dinh/nghi-phep/le-tet.md"
+        ]},
+        {"Tác phong & ứng xử" = [
+            "quy-dinh/tac-phong-ung-xu/giao-tiep-noi-bo.md",
+            "quy-dinh/tac-phong-ung-xu/voi-hoc-sinh.md",
+            "quy-dinh/tac-phong-ung-xu/voi-phu-huynh.md",
+            "quy-dinh/tac-phong-ung-xu/hop-hanh-su-kien.md",
+            "quy-dinh/tac-phong-ung-xu/khong-gian-so.md",
+            "quy-dinh/tac-phong-ung-xu/trang-phuc.md"
+        ]},
+        "quy-dinh/su-dung-tai-san.md",
+        {"Bảo mật thông tin" = [
+            "quy-dinh/bao-mat-thong-tin/hoc-sinh.md",
+            "quy-dinh/bao-mat-thong-tin/phu-huynh.md",
+            "quy-dinh/bao-mat-thong-tin/tai-lieu-noi-bo.md"
+        ]},
+        {"Xử lý vi phạm" = [
+            "quy-dinh/xu-ly-vi-pham/muc-do-vi-pham.md",
+            "quy-dinh/xu-ly-vi-pham/hinh-thuc-xu-ly.md",
+            "quy-dinh/xu-ly-vi-pham/quy-trinh-xu-ly.md"
+        ]}
+    ]},
+    {"Quy trình" = [
+        {"Hoạt động giáo dục" = [
+            "quy-trinh/hoat-dong-giao-duc/to-chuc-khao-thi.md",
+            "quy-trinh/hoat-dong-giao-duc/to-chuc-su-kien.md"
+        ]},
+        {"Văn bản & phê duyệt" = [
+            "quy-trinh/van-ban-phe-duyet/dien-don.md",
+            "quy-trinh/van-ban-phe-duyet/trinh-phe-duyet.md",
+            "quy-trinh/van-ban-phe-duyet/cap-nhat-he-thong.md"
+        ]},
+        {"Tuyển dụng & Hội nhập" = [
+            "quy-trinh/tuyen-dung-hoi-nhap/dang-tin-tiep-nhan-ho-so.md",
+            "quy-trinh/tuyen-dung-hoi-nhap/phong-van-danh-gia.md",
+            "quy-trinh/tuyen-dung-hoi-nhap/ky-hop-dong.md",
+            "quy-trinh/tuyen-dung-hoi-nhap/huong-dan-nhan-su-moi.md"
+        ]},
+        {"Nghỉ việc & bàn giao" = [
+            "quy-trinh/nghi-viec-ban-giao/thong-bao-nghi-viec.md",
+            "quy-trinh/nghi-viec-ban-giao/ban-giao-cong-viec-tai-san.md",
+            "quy-trinh/nghi-viec-ban-giao/thanh-ly-hop-dong.md"
+        ]},
+        {"Nhập học" = [
+            "quy-trinh/nhap-hoc/tiep-nhan-ho-so.md",
+            "quy-trinh/nhap-hoc/xet-duyet.md",
+            "quy-trinh/nhap-hoc/thong-bao-ket-qua.md",
+            "quy-trinh/nhap-hoc/hoan-tat-thu-tuc.md"
+        ]},
+        {"Chuyển trường / thôi học" = [
+            "quy-trinh/chuyen-truong-thoi-hoc/tiep-nhan-yeu-cau.md",
+            "quy-trinh/chuyen-truong-thoi-hoc/xet-duyet.md",
+            "quy-trinh/chuyen-truong-thoi-hoc/cap-nhat-ho-so.md"
+        ]},
+        {"Xử lý sự cố học sinh" = [
+            "quy-trinh/xu-ly-su-co-hoc-sinh/tiep-nhan-thong-tin.md",
+            "quy-trinh/xu-ly-su-co-hoc-sinh/thong-bao-quan-ly.md",
+            "quy-trinh/xu-ly-su-co-hoc-sinh/lien-he-phu-huynh.md",
+            "quy-trinh/xu-ly-su-co-hoc-sinh/lap-bien-ban.md"
+        ]},
+        {"Họp phụ huynh" = [
+            "quy-trinh/hop-phu-huynh/len-lich-thong-bao.md",
+            "quy-trinh/hop-phu-huynh/chuan-bi-noi-dung.md",
+            "quy-trinh/hop-phu-huynh/lap-bien-ban.md"
+        ]},
+        {"Mua sắm & thanh toán" = [
+            "quy-trinh/mua-sam-thanh-toan/lap-de-xuat.md",
+            "quy-trinh/mua-sam-thanh-toan/phe-duyet.md",
+            "quy-trinh/mua-sam-thanh-toan/thuc-hien-quyet-toan.md"
+        ]},
+        {"Báo cáo định kỳ" = [
+            "quy-trinh/bao-cao-dinh-ky/bao-cao-ngay.md",
+            "quy-trinh/bao-cao-dinh-ky/bao-cao-tuan.md",
+            "quy-trinh/bao-cao-dinh-ky/bao-cao-thang.md",
+            "quy-trinh/bao-cao-dinh-ky/bao-cao-hoc-ky.md"
+        ]}
+    ]},
+    {"Nhân sự" = [
+        {"Ban giám hiệu" = [
+            "nhan-su/ban-giam-hieu/hieu-truong.md",
+            "nhan-su/ban-giam-hieu/hieu-pho-dao-tao.md",
+            "nhan-su/ban-giam-hieu/hieu-pho-hanh-chinh.md"
+        ]},
+        {"Giáo viên" = [
+            "nhan-su/giao-vien/giao-vien-bo-mon.md",
+            "nhan-su/giao-vien/giao-vien-chu-nhiem.md",
+            "nhan-su/giao-vien/to-truong-chuyen-mon.md"
+        ]},
+        {"Học vụ & học sinh" = [
+            "nhan-su/hoc-vu-hoc-sinh/quan-sinh.md",
+            "nhan-su/hoc-vu-hoc-sinh/tu-van-tam-ly.md",
+            "nhan-su/hoc-vu-hoc-sinh/doan-doi.md"
+        ]},
+        {"Hành chính" = [
+            "nhan-su/hanh-chinh/van-thu.md",
+            "nhan-su/hanh-chinh/nhan-su.md",
+            "nhan-su/hanh-chinh/tuyen-sinh.md"
+        ]},
+        {"Tài chính" = [
+            "nhan-su/tai-chinh/ke-toan.md"
+        ]},
+        {"Vận hành" = [
+            "nhan-su/van-hanh/bao-ve.md",
+            "nhan-su/van-hanh/lao-cong.md",
+            "nhan-su/van-hanh/co-so-vat-chat.md",
+            "nhan-su/van-hanh/it.md",
+            "nhan-su/van-hanh/y-te.md"
+        ]}
+    ]},
+    {"Biểu mẫu" = [
+        {"Nhân sự" = [
+            "bieu-mau/nhan-su/don-van-ban.md",
+            "bieu-mau/nhan-su/phieu-de-xuat.md",
+            "bieu-mau/nhan-su/phieu-ban-giao.md",
+            "bieu-mau/nhan-su/hop-dong-thu-viec.md",
+            "bieu-mau/nhan-su/checklist-onboarding.md"
+        ]},
+        {"Học vụ" = [
+            "bieu-mau/hoc-vu/phieu-lien-lac-phu-huynh.md",
+            "bieu-mau/hoc-vu/bien-ban-hop-phu-huynh.md",
+            "bieu-mau/hoc-vu/phieu-chuyen-lop.md",
+            "bieu-mau/hoc-vu/don-xin-thoi-hoc.md"
+        ]},
+        {"Sự cố" = [
+            "bieu-mau/su-co/bien-ban-su-co.md",
+            "bieu-mau/su-co/phieu-tuong-trinh.md",
+            "bieu-mau/su-co/bien-ban-xu-ly-ky-luat.md"
+        ]},
+        {"Tài chính" = [
+            "bieu-mau/tai-chinh/phieu-thu.md",
+            "bieu-mau/tai-chinh/phieu-chi.md",
+            "bieu-mau/tai-chinh/de-nghi-thanh-toan.md",
+            "bieu-mau/tai-chinh/phieu-hoan-ung.md"
+        ]},
+        {"Họp & công việc" = [
+            "bieu-mau/hop-cong-viec/bien-ban-hop.md",
+            "bieu-mau/hop-cong-viec/phieu-giao-viec.md"
+        ]}
+    ]},
+    {"Phát triển" = [
+        {"Đánh giá hiệu suất" = [
+            "phat-trien/danh-gia-hieu-suat/kpi-theo-vi-tri.md",
+            "phat-trien/danh-gia-hieu-suat/tieu-chi-danh-gia.md",
+            "phat-trien/danh-gia-hieu-suat/thang-diem.md"
+        ]},
+        {"Chu kỳ đánh giá" = [
+            "phat-trien/chu-ky-danh-gia/thang.md",
+            "phat-trien/chu-ky-danh-gia/hoc-ky.md",
+            "phat-trien/chu-ky-danh-gia/nam.md",
+            "phat-trien/chu-ky-danh-gia/ai-danh-gia-ai.md"
+        ]},
+        {"Xếp loại & thăng tiến" = [
+            "phat-trien/xep-loai-thang-tien/xuat-sac-tot-dat-can-cai-thien.md",
+            "phat-trien/xep-loai-thang-tien/lo-trinh-thang-tien.md",
+            "phat-trien/xep-loai-thang-tien/dieu-kien-thang-cap.md"
+        ]},
+        {"Đào tạo" = [
+            "phat-trien/dao-tao/onboarding.md",
+            "phat-trien/dao-tao/dinh-ky-noi-bo.md",
+            "phat-trien/dao-tao/chuyen-mon-nghiep-vu.md",
+            "phat-trien/dao-tao/ben-ngoai-cam-ket.md"
+        ]},
+        {"Phúc lợi phi lương" = [
+            "phat-trien/phuc-loi-phi-luong/thuong.md",
+            "phat-trien/phuc-loi-phi-luong/du-lich.md",
+            "phat-trien/phuc-loi-phi-luong/hieu-hi-sinh-nhat.md"
+        ]}
+    ]},
+    {"Công cụ" = [
+        {"Danh bạ nội bộ" = [
+            "cong-cu/danh-ba-noi-bo/so-dien-thoai-tung-bo-phan.md",
+            "cong-cu/danh-ba-noi-bo/email-noi-bo.md"
+        ]},
+        {"Kênh liên lạc" = [
+            "cong-cu/kenh-lien-lac/nhom-chat-theo-bo-phan.md",
+            "cong-cu/kenh-lien-lac/email.md",
+            "cong-cu/kenh-lien-lac/hotline-khan.md"
+        ]},
+        {"Phần mềm" = [
+            "cong-cu/phan-mem/quan-ly-hoc-sinh.md",
+            "cong-cu/phan-mem/cham-cong.md",
+            "cong-cu/phan-mem/ke-toan.md",
+            "cong-cu/phan-mem/lms.md"
+        ]},
+        {"SLA phản hồi" = [
+            "cong-cu/sla-phan-hoi/khan-cap-15-phut.md",
+            "cong-cu/sla-phan-hoi/thong-thuong-24-gio.md"
+        ]},
+        {"Hướng dẫn sử dụng" = [
+            "cong-cu/huong-dan-su-dung/dang-nhap-he-thong.md",
+            "cong-cu/huong-dan-su-dung/thao-tac-co-ban.md"
+        ]}
+    ]},
+    {"Công việc" = [
+        {"Lịch công tác" = [
+            "cong-viec/lich-cong-tac/lich-tuan-bgh.md",
+            "cong-viec/lich-cong-tac/lich-thang.md"
+        ]},
+        {"Lịch họp định kỳ" = [
+            "cong-viec/lich-hop-dinh-ky/hop-toan-truong.md",
+            "cong-viec/lich-hop-dinh-ky/hop-bo-phan.md",
+            "cong-viec/lich-hop-dinh-ky/hop-to-chuyen-mon.md"
+        ]},
+        {"Lịch năm học" = [
+            "cong-viec/lich-nam-hoc/khai-giang-tong-ket.md",
+            "cong-viec/lich-nam-hoc/thi-cu.md",
+            "cong-viec/lich-nam-hoc/su-kien-lon.md"
+        ]},
+        {"Phân công trực" = [
+            "cong-viec/phan-cong-truc/truc-truong.md",
+            "cong-viec/phan-cong-truc/truc-coi-thi.md",
+            "cong-viec/phan-cong-truc/truc-le.md"
+        ]}
+    ]}
+]
+
+# With the "extra_css" option you can add your own CSS styling to customize
+# your Zensical project according to your needs. You can add any number of
+# CSS files.
+#
+# The path provided should be relative to the "docs_dir".
+#
+# Read more: https://zensical.org/docs/customization/#additional-css
+#
+#extra_css = ["stylesheets/extra.css"]
+
+# With the `extra_javascript` option you can add your own JavaScript to your
+# project to customize the behavior according to your needs.
+#
+# The path provided should be relative to the "docs_dir".
+#
+# Read more: https://zensical.org/docs/customization/#additional-javascript
+#extra_javascript = ["javascripts/extra.js"]
+
+# ----------------------------------------------------------------------------
+# Section for configuring theme options
+# ----------------------------------------------------------------------------
+[project.theme]
+logo = "images/logo-mcs.png"
+# change this to "classic" to use the traditional Material for MkDocs look.
+#variant = "classic"
+
+# Zensical allows you to override specific blocks, partials, or whole
+# templates as well as to define your own templates. To do this, uncomment
+# the custom_dir setting below and set it to a directory in which you
+# keep your template overrides.
+#
+# Read more:
+# - https://zensical.org/docs/customization/#extending-the-theme
+#
+#custom_dir = "overrides"
+
+# With the "favicon" option you can set your own image to use as the icon
+# browsers will use in the browser title bar or tab bar. The path provided
+# must be relative to the "docs_dir".
+#
+# Read more:
+# - https://zensical.org/docs/setup/logo-and-icons/#favicon
+# - https://developer.mozilla.org/en-US/docs/Glossary/Favicon
+#
+favicon = "images/logo-mcs.png"
+
+# Zensical supports more than 60 different languages. This means that the
+# labels and tooltips that Zensical's templates produce are translated.
+# The "language" option allows you to set the language used. This language
+# is also indicated in the HTML head element to help with accessibility
+# and guide search engines and translation tools.
+#
+# The default language is "en" (English). It is possible to create
+# sites with multiple languages and configure a language selector. See
+# the documentation for details.
+#
+# Read more:
+# - https://zensical.org/docs/setup/language/
+#
+language = "vi"
+
+# Zensical provides a number of feature toggles that change the behavior
+# of the documentation site.
+features = [
+    # Zensical includes an announcement bar. This feature allows users to
+    # dismiss it then they have read the announcement.
+    # https://zensical.org/docs/setup/header/#announcement-bar
+    "announce.dismiss",
+
+    # If you have a repository configured and turn on this feature, Zensical
+    # will generate an edit button for the page. This works for common
+    # repository hosting services.
+    # https://zensical.org/docs/setup/repository/#code-actions
+    #"content.action.edit",
+
+    # If you have a repository configured and turn on this feature, Zensical
+    # will generate a button that allows the user to view the Markdown
+    # code for the current page.
+    # https://zensical.org/docs/setup/repository/#code-actions
+    #"content.action.view",
+
+    # Code annotations allow you to add an icon with a tooltip to your
+    # code blocks to provide explanations at crucial points.
+    # https://zensical.org/docs/authoring/code-blocks/#code-annotations
+    "content.code.annotate",
+
+    # This feature turns on a button in code blocks that allow users to
+    # copy the content to their clipboard without first selecting it.
+    # https://zensical.org/docs/authoring/code-blocks/#code-copy-button
+    "content.code.copy",
+
+    # Code blocks can include a button to allow for the selection of line
+    # ranges by the user.
+    # https://zensical.org/docs/authoring/code-blocks/#code-selection-button
+    "content.code.select",
+
+    # Zensical can render footnotes as inline tooltips, so the user can read
+    # the footnote without leaving the context of the document.
+    # https://zensical.org/docs/authoring/footnotes/#footnote-tooltips
+    "content.footnote.tooltips",
+
+    # If you have many content tabs that have the same titles (e.g., "Python",
+    # "JavaScript", "Cobol"), this feature causes all of them to switch to
+    # at the same time when the user chooses their language in one.
+    # https://zensical.org/docs/authoring/content-tabs/#linked-content-tabs
+    "content.tabs.link",
+
+    # TODO: not sure I understand this one? Is there a demo of this in the docs?
+    # https://zensical.org/docs/authoring/tooltips/#improved-tooltips
+    "content.tooltips",
+
+    # With this feature enabled, Zensical will automatically hide parts
+    # of the header when the user scrolls past a certain point.
+    # https://zensical.org/docs/setup/header/#automatic-hiding
+    # "header.autohide",
+
+    # Turn on this feature to expand all collapsible sections in the
+    # navigation sidebar by default.
+    # https://zensical.org/docs/setup/navigation/#navigation-expansion
+    "navigation.expand",
+
+    # This feature turns on navigation elements in the footer that allow the
+    # user to navigate to a next or previous page.
+    # https://zensical.org/docs/setup/footer/#navigation
+    "navigation.footer",
+
+    # When section index pages are enabled, documents can be directly attached
+    # to sections, which is particularly useful for providing overview pages.
+    # https://zensical.org/docs/setup/navigation/#section-index-pages
+    "navigation.indexes",
+
+    # When instant navigation is enabled, clicks on all internal links will be
+    # intercepted and dispatched via XHR without fully reloading the page.
+    # https://zensical.org/docs/setup/navigation/#instant-navigation
+    "navigation.instant",
+
+    # With instant prefetching, your site will start to fetch a page once the
+    # user hovers over a link. This will reduce the perceived loading time
+    # for the user.
+    # https://zensical.org/docs/setup/navigation/#instant-prefetching
+    "navigation.instant.prefetch",
+
+    # In order to provide a better user experience on slow connections when
+    # using instant navigation, a progress indicator can be enabled.
+    # https://zensical.org/docs/setup/navigation/#progress-indicator
+    #"navigation.instant.progress",
+
+    # When navigation paths are activated, a breadcrumb navigation is rendered
+    # above the title of each page
+    # https://zensical.org/docs/setup/navigation/#navigation-path
+    "navigation.path",
+
+    # When pruning is enabled, only the visible navigation items are included
+    # in the rendered HTML, reducing the size of the built site by 33% or more.
+    # https://zensical.org/docs/setup/navigation/#navigation-pruning
+    #"navigation.prune",
+
+    # When sections are enabled, top-level sections are rendered as groups in
+    # the sidebar for viewports above 1220px, but remain as-is on mobile.
+    # https://zensical.org/docs/setup/navigation/#navigation-sections
+    "navigation.sections",
+
+    # When tabs are enabled, top-level sections are rendered in a menu layer
+    # below the header for viewports above 1220px, but remain as-is on mobile.
+    # https://zensical.org/docs/setup/navigation/#navigation-tabs
+    "navigation.tabs",
+
+    # When sticky tabs are enabled, navigation tabs will lock below the header
+    # and always remain visible when scrolling down.
+    # https://zensical.org/docs/setup/navigation/#sticky-navigation-tabs
+    #"navigation.tabs.sticky",
+
+    # A back-to-top button can be shown when the user, after scrolling down,
+    # starts to scroll up again.
+    # https://zensical.org/docs/setup/navigation/#back-to-top-button
+    "navigation.top",
+
+    # When anchor tracking is enabled, the URL in the address bar is
+    # automatically updated with the active anchor as highlighted in the table
+    # of contents.
+    # https://zensical.org/docs/setup/navigation/#anchor-tracking
+    "navigation.tracking",
+
+    # When search highlighting is enabled and a user clicks on a search result,
+    # Zensical will highlight all occurrences after following the link.
+    # https://zensical.org/docs/setup/search/#search-highlighting
+    "search.highlight",
+
+    # When anchor following for the table of contents is enabled, the sidebar
+    # is automatically scrolled so that the active anchor is always visible.
+    # https://zensical.org/docs/setup/navigation/#anchor-following
+    "toc.follow",
+
+    # When navigation integration for the table of contents is enabled, it is
+    # always rendered as part of the navigation sidebar on the left.
+    # https://zensical.org/docs/setup/navigation/#navigation-integration
+    #"toc.integrate",
+]
+
+# ----------------------------------------------------------------------------
+# In the "palette" subsection you can configure options for the color scheme.
+# You can configure different color # schemes, e.g., to turn on dark mode,
+# that the user can switch between. Each color scheme can be further
+# customized.
+#
+# Read more:
+# - https://zensical.org/docs/setup/colors/
+# ----------------------------------------------------------------------------
+[[project.theme.palette]]
+scheme = "default"
+primary = "kelly green"
+accent = "light green"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+scheme = "slate"
+primary = "kelly green"
+accent = "light green"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+
+# ----------------------------------------------------------------------------
+# In the "font" subsection you can configure the fonts used. By default, fonts
+# are loaded from Google Fonts, giving you a wide range of choices from a set
+# of suitably licensed fonts. There are options for a normal text font and for
+# a monospaced font used in code blocks.
+# ----------------------------------------------------------------------------
+[project.theme.font]
+text = "Roboto"
+code = "Source Code Pro"
+
+# ----------------------------------------------------------------------------
+# You can configure your own logo to be shown in the header using the "logo"
+# option in the "icons" subsection. The logo can be a path to a file in your
+# "docs_dir" or it can be a path to an icon.
+#
+# Likewise, you can customize the logo used for the repository section of the
+# header. Zensical derives the default logo for this from the repository URL.
+# See below...
+#
+# There are other icons you can customize. See the documentation for details.
+#
+# Read more:
+# - https://zensical.org/docs/setup/logo-and-icons
+# - https://zensical.org/docs/authoring/icons-emojis/#search
+# ----------------------------------------------------------------------------
+[project.theme.icon]
+logo = "images/logo-mcs.png"
+#repo = "lucide/smile"
+
+# ----------------------------------------------------------------------------
+# The "extra" section contains miscellaneous settings.
+# ----------------------------------------------------------------------------
+#[[project.extra.social]]
+#icon = "fontawesome/brands/github"
+#link = "https://github.com/user/repo"
+
+# ----------------------------------------------------------------------------
+# Markdown extensions
+# ----------------------------------------------------------------------------
+[project.markdown_extensions.pymdownx.tabbed]
+alternate_style = true
+
+[project.markdown_extensions.pymdownx.tasklist]
+custom_checkbox = true
+
+
